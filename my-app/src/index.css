@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🔥 MAIN APP */
+.App {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  height: 100vh;              /* FIX */
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background-color: rgb(52, 10, 241);
+  color: white;
+  padding: 1rem;
+  flex-shrink: 0;             /* FIX */
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* FORM (ADD ITEM) */
+.addForm {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.addForm label {
+  display: none;
+}
+
+.addForm input {
+  flex-grow: 1;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.addForm button {
+  padding: 0 20px;
+  font-size: 2rem;
+  background-color: white;
+  color: blue;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 🔍 SEARCH BOX */
+.searchInput {
+  width: 95%;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* 🔥 MAIN (SCROLL AREA) */
+main {
+  flex: 1;                   /* FIX */
+  overflow-y: auto;          /* FIX */
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* EMPTY MESSAGE */
+.empty-message {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #ffffff;
+  padding: 18px 30px;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.item input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.item label {
+  flex-grow: 1;
+  font-size: 1.8rem;
+}
+
+.item button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  flex-shrink: 0;            /* FIX */
+}

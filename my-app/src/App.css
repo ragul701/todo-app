@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #742974, #b92399, #78ac18, #1c31ad);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* MAIN BOX */
+.app {
+  width: 95%;
+  max-width: 800px;
+  height: 90vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(90deg, #74883e, #d406ca, #05a4ee);
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* INPUT BOX */
+.inputBox {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+}
+
+/* ADD BUTTON */
+.inputBox button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #7cf00f, #d406a7);
+  transition: 0.3s;
+}
+
+.inputBox button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #d406c3, #90e606);
+}
+
+/* LIST */
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 20px;
+}
+
+/* ITEM BOX */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(90deg, rgba(29,78,216,0.7), rgba(6,182,212,0.7));
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+}
+
+/* DELETE BUTTON FIXED */
+.delete-btn {
+  background: linear-gradient(90deg, #ef4444, #f97316);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ICON DEFAULT */
+.delete-btn svg {
+  color: white;
+  transition: 0.3s;
+}
+
+/* 🔥 ICON HOVER (MAIN FIX) */
+.delete-btn:hover svg {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+.footer {
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(29,78,216,0.6), rgba(6,182,212,0.6));
+  color: white;
+  font-size: 14px;
+}
+
+/* STATUS */
+.completed {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.pending {
+  color: #facc15;
+  font-weight: bold;
+}

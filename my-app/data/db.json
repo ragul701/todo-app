@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "id": "1eG_ANnl25I",
+      "checked": false,
+      "item": "ragul g"
+    },
+    {
+      "id": "zCNCoZeBloA",
+      "checked": false,
+      "item": "RAGUL G"
+    },
+    {
+      "id": "O9emhVPDlV0",
+      "checked": false,
+      "item": "KARTHIK "
+    },
+    {
+      "id": "suh4d1zhFpM",
+      "checked": false,
+      "item": "TAMIL"
+    },
+    {
+      "id": "E1QsbsnJ3GQ",
+      "checked": false,
+      "item": "DINESH"
+    },
+    {
+      "id": "iCH2PsvfjJM",
+      "checked": false,
+      "item": "PAVI"
+    },
+    {
+      "id": "u-GYjfxpqP0",
+      "checked": false,
+      "item": "KANNAN"
+    },
+    {
+      "id": "a7V-TU7HtUo",
+      "checked": false,
+      "item": "MURUGA"
+    },
+    {
+      "id": "QTtLaeStg-E",
+      "checked": false,
+      "item": "VISHWA"
+    },
+    {
+      "id": "mODaNrlhukY",
+      "checked": false,
+      "item": "RAJU"
+    },
+    {
+      "id": "TFjUqIvilBs",
+      "checked": false,
+      "item": "DK KUMAR"
+    },
+    {
+      "id": "H9OVrU8DTEk",
+      "checked": false,
+      "item": "GANESH"
+    },
+    {
+      "id": "nYMWpecu4d4",
+      "checked": false,
+      "item": "ARUN KUMAR"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
